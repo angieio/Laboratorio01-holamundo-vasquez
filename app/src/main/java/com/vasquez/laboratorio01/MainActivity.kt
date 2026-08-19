@@ -39,9 +39,9 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Column(modifier= modifier){
         Text(text="¡Hola, soy $name!", fontSize = 32.sp,
-            color = androidx.compose.ui.graphics.Color.Blue,
+            color = androidx.compose.ui.graphics.Color.Black,
             fontWeight = FontWeight.Bold)
-        Text(text="Curso:Programación en Móviles", )
+        Text(text="Curso:Programación en Móviles", fontWeight = FontWeight.Bold)
         Button(onClick = {}) {
             Text("Click")
         }
