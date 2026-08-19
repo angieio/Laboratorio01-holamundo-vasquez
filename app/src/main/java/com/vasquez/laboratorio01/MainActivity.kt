@@ -16,6 +16,7 @@ import com.vasquez.laboratorio01.ui.theme.Laboratorio01Theme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.material3.Button
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,6 +42,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             color = androidx.compose.ui.graphics.Color.Blue,
             fontWeight = FontWeight.Bold)
         Text(text="Curso:Programación en Móviles", )
+        Button(onClick = {}) {
+            Text("Click")
+        }
     }
 }
 
