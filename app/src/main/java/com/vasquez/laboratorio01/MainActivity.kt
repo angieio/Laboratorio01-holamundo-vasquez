@@ -1,5 +1,6 @@
 package com.vasquez.laboratorio01
 
+import android.R
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -35,7 +36,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Column(modifier= modifier){
-        Text(text="¡Hola, soy $name!", fontSize = 24.sp)
+        Text(text="¡Hola, soy $name!", fontSize = 24.sp,
+            color = androidx.compose.ui.graphics.Color.Blue)
         Text(text="Curso:Programación en Móviles")
     }
 }
