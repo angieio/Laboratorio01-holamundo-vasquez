@@ -15,6 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.vasquez.laboratorio01.ui.theme.Laboratorio01Theme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.text.font.FontWeight
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,9 +37,10 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Column(modifier= modifier){
-        Text(text="¡Hola, soy $name!", fontSize = 24.sp,
-            color = androidx.compose.ui.graphics.Color.Blue)
-        Text(text="Curso:Programación en Móviles")
+        Text(text="¡Hola, soy $name!", fontSize = 32.sp,
+            color = androidx.compose.ui.graphics.Color.Blue,
+            fontWeight = FontWeight.Bold)
+        Text(text="Curso:Programación en Móviles", )
     }
 }
 
@@ -46,6 +48,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     Laboratorio01Theme {
-        Greeting("Angieluz Vasquez")
+        Greeting("Angieluz Kelly Vasquez")
     }
 }
